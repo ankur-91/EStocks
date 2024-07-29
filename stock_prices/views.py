@@ -16,6 +16,7 @@ def get_yesterdays_stock_prices(request, stock_ticker):
         'High': polygon_data.get('high', 'N/A'),
         'Low': polygon_data.get('low', 'N/A'),
         'Pre Market': polygon_data.get('preMarket', 'N/A'),
+        'Open': polygon_data.get('open', 'N/A'),
         'Close': polygon_data.get('close', 'N/A')
     }
 
@@ -48,7 +49,7 @@ def get_yesterdays_profitable_stocks(request):
                               'Profit': t_stocks['profit']}
                 all_top_stocks.append(stock_info)
 
-            return JsonResponse(top_five_stocks, safe=False)
+            return JsonResponse(all_top_stocks, safe=False)
         else:
             return JsonResponse({"error": "No data available"}, status=404)
     except Exception as e:
