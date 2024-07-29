@@ -9,6 +9,6 @@ To achieve this, I have created 3 API endpoints:
 
 To run the application from your machine, clone this repo and follow below steps:
 
-1. Start virtual environment by using this command: source/bin/activate if you are Linux user or use venv\Scripts\activate if you are Windows user
-3. Run this command from your repo: python manage.py runserver
+1. Start virtual environment by using this command: **_source/bin/activate_** if you are Linux user or use **_venv\Scripts\activate_** if you are Windows user
+3. Run this command from your repo: _python manage.py runserver_****
 4. Use any of the above listed APIs on your browser to view the stock data
