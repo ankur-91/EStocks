@@ -12,3 +12,5 @@ To run the application from your machine, clone this repo and follow below steps
 1. Start virtual environment by using this command: **_source/bin/activate_** if you are Linux user or use **_venv\Scripts\activate_** if you are Windows user
 3. Run this command from your repo: _**python manage.py runserver**_
 4. Use any of the above listed APIs on your browser to view the stock data
+
+**I have also implemented the basic test cases. Please find them in stock_prices/tests.py directory**
